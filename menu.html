@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wallet - Menú Principal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script src="./assets/js/validaLogin.js"></script>
+    <script src="./assets/js/logica_global.js"></script>
+    
+    <script defer src="./assets/js/menu.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Menú Principal</h2>
+        <div class="form-group">
+            <label for="balance">Dinero en cuenta:</label>
+            <h3>$ <span id="monto-saldo"></span></h3>
+        </div>
+        <a href="deposit.html" class="btn btn-primary" id="link-deposit">Depositar</a>
+        <a href="sendmoney.html" class="btn btn-primary" id="link-sendmoney">Enviar Dinero</a>
+        <a href="transactions.html" class="btn btn-primary" id="link-transactions">Últimos Movimientos</a>
+    </div>
+
+    <div class="py-3 text-center">
+        <p id="mensaje-redireccion" class="font-weight-bold text-primary"></p>
+    </div>
+</body>
+
+</html>
